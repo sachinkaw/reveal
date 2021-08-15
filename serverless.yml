@@ -1,0 +1,10 @@
+service: reveal-triangle
+
+functions:
+  triangle:
+    handler: routers/triangle.router
+    events:
+      - http: 
+          path: account/details
+          method: get
+          cors: true
